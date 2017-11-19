@@ -10,6 +10,7 @@
 		margin: 0 auto;
 		padding: 0 auto;
 		background-color: black;
+		font-size: 10px;
 	}
 /* Header Styles */
 div.container-fluid.header-section{
@@ -63,6 +64,7 @@ nav{
  nav li{
 	 display: inline;
 	 text-align: center;
+	 font-size: 1.4em;
 	  
 	  
 	
@@ -106,7 +108,7 @@ text-align: center;
 font-family: Baloo Thambi;
 color: #DCDCDC;
 margin-top: 15px;
-font-size: 23px
+font-size: 2.3em;
 }
 p{
 margin: 0 auto;
@@ -114,7 +116,7 @@ text-align: center;
 font-family: Baloo Thambi;
 color: #DCDCDC;
 margin-top: 15px;
-font-size: 19px;
+font-size: 1.9em;
 }
 .skills2{
 	margin-top: -5px;
@@ -154,6 +156,7 @@ border-top: 1px white solid;
 	background-position: center;
 	height: 435px;
 	border-top: 1px white solid;
+	font-size: 1.3em;
 
 }
 .contact-section:after: {
@@ -182,6 +185,7 @@ input[type=text]{
 	color: rgb(65,105,225);
 	padding: 5px;
 	font-family: Baloo Thambi;
+	font-size: 1em;
 	box-shadow:  1px 1px 3px 2px #ccc;
 	background-color: rgb(192,192,192);
 }
@@ -247,6 +251,7 @@ textarea{
 	background-color: rgb(192,192,192);
 	box-shadow:  1px 1px 3px 2px #ccc;
 	font-family: Baloo Thambi;
+	font-size: 1em;
 }
 textarea:focus{
 background-color: lightblue;
@@ -276,7 +281,7 @@ i{
 
 	}
 	h6{
-		font-size: 10px;
+		font-size: 1em;
 		padding: 15px 0;
 		font-family: Lobster;
 		letter-spacing: 2px;
@@ -287,7 +292,7 @@ i{
 
 	.fa {
 		padding: 10px 50px;
-		font-size: 30px;
+		font-size: 3em;
 		width: 15%;
 		margin: 5px 2px;
 		color: white;
@@ -327,4 +332,14 @@ i{
 	}
 .fadeInDown{
 	-webkit-animation-delay: 1s;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:480px) {
+nav li{
+	display: none;
+}
+
+	
 }
