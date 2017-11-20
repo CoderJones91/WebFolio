@@ -4,6 +4,7 @@
 			outline: 0;
 			vertical-align: baseline;
 			background: transparent;
+			overflow: auto;
 	}
 
 	body{
@@ -11,6 +12,10 @@
 		padding: 0 auto;
 		background-color: black;
 		font-size: 10px;
+		
+	}
+	img{
+		max-width: 100%;
 	}
 /* Header Styles */
 div.container-fluid.header-section{
@@ -42,6 +47,7 @@ h1{
 }
 h1.sections{
 	padding-top: 20px;
+	margin-bottom: 20px;
 }
 h3{
 	text-align: center;
@@ -134,11 +140,16 @@ background-position: bottom center;
 border-top: 1px white solid;
 
 }
+.flex-container{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+}
 
 
 .quotes-section img{
-	position: absolute;
-	margin-top: 25px;
+	margin: 25px 25px 0 18px;
 	height: 180px;
 	width: 195px;
 	opacity: .9;
@@ -164,10 +175,13 @@ border-top: 1px white solid;
 	background-position: center;
 }
 
-.wrapper{
-	position: relative;
-	top: 18px;
+.flex-container{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
 }
+
+
 input[type=text], select {
 	border: 1px #1E90FF;
 
@@ -336,10 +350,42 @@ i{
 
 /* Media Queries */
 
+/* Header  */
+@media screen and (max-width:714px){
+.home-section{
+		margin-top: 35px;
+	}
+
+}
+
 @media screen and (max-width:480px) {
 nav li{
 	display: none;
 }
+}
 
-	
+/* Quotes */
+@media screen and (max-width: 1339px){
+.quotes-section{
+	height: 570px;
+}
+.quotes-section  img{
+	margin-bottom: 10px;
+}
+}
+@media screen and (max-width:823px){
+.quotes-section{
+	height: 770px;
+}
+}
+@media screen and (max-width:565px) {
+.quotes-section{
+	height: 1205px;
+
+}	
+}
+@media screen and (max-width:861px){
+ul.navi:last-child li:nth-child(1){
+	display: none;
+}
 }
