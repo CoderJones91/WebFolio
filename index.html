@@ -21,7 +21,10 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-56869707-1');
-  _gaq.push(["_set", "title", "Your Brand New Page Title"]);
+  ga('send', 'pageview', {
+  'page': '/my-overridden-page?id=1',
+  'title': 'my overridden page'
+});
 </script>
 
 
