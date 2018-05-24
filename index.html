@@ -21,9 +21,14 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-56869707-1');
-  ga('send', 'pageview', {
-  'page': '/my-overridden-page?id=1',
-  'title': 'my overridden page'
+  
+  if window.ga != undefined
+  ga('set', 'location', location.href.split('#')[0])
+  ga('send', 'pageview', {"title": document.title})
+else if window._gaq != undefined
+  _gaq.push(['_trackPageview'])
+else if window.pageTracker != undefined
+  pageTracker._trackPageview();
 });
 </script>
 
