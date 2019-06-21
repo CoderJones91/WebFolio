@@ -252,13 +252,9 @@ transform: scale(1.2);
 
 }
 
-input[type="text"]:focus{
+input[type="text"],input[type="email"]:focus{
 background-color: lightblue;
 }
-
-input[type="email"]:focus{
-    background-color: lightblue;
-    }
 
 input:-webkit-autofill,
 input:-webkit-autofill:focus,
