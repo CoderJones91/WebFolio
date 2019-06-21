@@ -195,7 +195,6 @@ input[type=text]{
 border: 3px white solid;
 border-radius: 10px;
 position: relative;
-text-align: center;
 width: 250px;
 margin:0 auto;
 display: block;
@@ -211,7 +210,6 @@ input[type=email]{
     border: 3px white solid;
     border-radius: 10px;
     position: relative;
-    text-align: center;
     width: 250px;
     margin:0 auto;
     display: block;
