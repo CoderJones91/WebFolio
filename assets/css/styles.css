@@ -258,6 +258,10 @@ input[type="text"]:focus{
 background-color: lightblue;
 }
 
+input[type="email"]:focus{
+    background-color: lightblue;
+    }
+
 input:-webkit-autofill,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
